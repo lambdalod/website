@@ -21,8 +21,8 @@ if (isset($_POST['submit'])) {
     else {
         // password is valid
         $len = match ($remember) {
-            true => time() + 60 * 60 * 24 * 30 * 2, // Two months
-            false => 0 // For current session
+            false => time() + 60 * 60 * 24 * 30 * 2, // Two months
+            true => 0 // For current session
         };
         setcookie('loghash', Auth::createLoginHash($user->getEmail()), $len, "/");
         header("Location: ../");
