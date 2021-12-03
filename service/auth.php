@@ -21,7 +21,8 @@ class Auth {
             setcookie('loghash', null, -1, '/');
             return false;
         }
-        if (is_null($u->getLastTimestamp())) $u->sendNotification("У Вас новая награда - \"Новичок\"", HOST.'assets/awards/newbie.png');
+        if (is_null($u->getHash())) return false;
+        if (is_null($u->getLastTimestamp())) $u->sendNotification("У Вас новая награда - \"Новичок\"", HOST.'assets/awards/newbie_a.png');
         $u->updateActivity();
         return $u;
     }
@@ -32,7 +33,7 @@ class User {
     private ?int $tg_id;
     private string $phone;
     private string $email;
-    private string $hash;
+    private ?string $hash;
     private int $role;
     private string $reg_ts;
     private string $name;
