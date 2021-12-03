@@ -46,6 +46,14 @@ if (isset($_SESSION['modal'])) {
     <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="../assets/css/login.css">
+    <style>
+        .alert-light {
+            background-color: #FFE6E6;
+            border-radius: 2px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+
+        }
+    </style>
 </head>
 
 <body>
@@ -55,6 +63,17 @@ if (isset($_SESSION['modal'])) {
         <div class="col-xl-5 paper d-grid gap-3">
             <div>
                 <p class="text-center subheader">Добро пожаловать!</p>
+                <?php if (isset($modal)): ?>
+                <div class='alert-light d-flex align-items-center'>
+                    <div class='alert-light-logo' style="margin-left:2em;margin-right:1em;">
+                        <svg width="40" height="40" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle r="6.33333" transform="matrix(1 8.74228e-08 8.74228e-08 -1 8.49996 8.49992)" stroke="#FF3C3C" stroke-width="1.5"/>
+                            <path d="M8.96983 8.49994L11.0589 6.41087C11.1887 6.28119 11.1887 6.07078 11.0589 5.94109C10.9291 5.8113 10.7189 5.8113 10.5891 5.94109L8.50006 8.03017L6.41087 5.94109C6.28108 5.8113 6.07089 5.8113 5.94109 5.94109C5.8113 6.07078 5.8113 6.28119 5.94109 6.41087L8.03028 8.49994L5.94109 10.589C5.8113 10.7187 5.8113 10.9291 5.94109 11.0588C6.00599 11.1236 6.09104 11.156 6.17598 11.156C6.26092 11.156 6.34597 11.1236 6.41087 11.0587L8.50006 8.96961L10.5891 11.0587C10.654 11.1236 10.7391 11.156 10.824 11.156C10.909 11.156 10.994 11.1236 11.0589 11.0587C11.1887 10.929 11.1887 10.7186 11.0589 10.5889L8.96983 8.49994Z" fill="#FF3C3C" stroke="#FF3C3C" stroke-width="0.3"/>
+                        </svg>
+                    </div>
+                    <p class='alert-light-text my-3'><?= $modal[1] ?></p>
+                </div>
+                <?php endif; ?>
             </div>
             <div class="text-center"><input class='line-input' type="text" placeholder="Номер телефона" name="phone"></div>
             <div class="text-center"><input class='line-input' type="password" placeholder="Пароль" name="password"></div>
