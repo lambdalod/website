@@ -39,7 +39,7 @@ if ($u === false) {
             </svg>
         </a>
         <button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol"><span class="visually-hidden">Toggle navigation</span><span
-                class="navbar-toggler-icon"></span></button>
+                    class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse gap-4" id="navcol" style="padding-left: 5%;">
             <ul class="navbar-nav">
                 <li class="nav-item">
@@ -74,7 +74,9 @@ if ($u === false) {
                 </li>
             </ul>
             <a class='image-button navbar-ico' href="#"><i class="fa fa-user-circle fa-2x"></i></a>
-            <a id="notifications" tabindex="0" class='image-button navbar-ico' href="javascript:void(0)" data-bs-trigger="focus" data-bs-toggle="popover" data-bs-placement="bottom" title="Уведомления" data-bs-content="Так держать, всё прочитано!"><i class="fa fa-bell fa-2x"></i></a>
+            <a id="notifications" tabindex="0" class='image-button navbar-ico' href="javascript:void(0)"
+               data-bs-trigger="focus" data-bs-toggle="popover" data-bs-placement="bottom" title="Уведомления"
+               data-bs-content="Так держать, всё прочитано!"><i class="fa fa-bell fa-2x"></i></a>
             <a class='image-button navbar-ico' href="#"><i class="fa fa-comments fa-2x"></i></a>
             <a class='image-button navbar-ico' href="#"><i class="fa fa-search fa-2x"></i></a>
         </div>
@@ -86,21 +88,25 @@ if ($u === false) {
         <div class="col-md-4" style="padding-left:3em">
             <img src="assets/img/big_avatar.png" class="big-avatar" alt="">
             <div class="row">
-                <div class="col"><i class="fa fa-paper-plane-o fa-2x custom-link" style="margin-left: 10%;"></i><a class='custom-link' href="https://t.me/egorkk">TELEGRAM</a></div>
+                <div class="col"><i class="fa fa-paper-plane-o fa-2x custom-link" style="margin-left: 10%;"></i><a
+                            class='custom-link' href="https://t.me/egorkk">TELEGRAM</a></div>
             </div>
         </div>
         <div class="col-md-4">
             <p class='text-header'>Смурыгин Егор Алексеевич</p>
             <p class='text-description'>Главный специалист по работе с ключевыми клиентами.</p>
-            <p class='text-paragraph'>Группа внутренних коммуникаций и развития корпоративной культуры / Департамент управления персоналом / Подразд. под упр. Барыбина О. Г.</p>
+            <p class='text-paragraph'>Группа внутренних коммуникаций и развития корпоративной культуры / Департамент
+                управления персоналом / Подразд. под упр. Барыбина О. Г.</p>
         </div>
         <div class="col-md-4">
             <div class="row">
                 <div class="col text-right">
-                    <p><i class="fa fa-fax" style="margin-right: 6px;"></i>(1234) 56-7890&nbsp; &nbsp; (9876) 54-3210</p>
+                    <p><i class="fa fa-fax" style="margin-right: 6px;"></i>(1234) 56-7890&nbsp; &nbsp; (9876) 54-3210
+                    </p>
                     <p><i class="fa fa-mobile-phone contact-phone"></i>&nbsp;+7 (903) 676-8494</p>
                     <p><i class="fas fa-at"></i> esmurygin@moscow.psbank.ru</p>
-                    <p><i class="fa fa-map-pin contact-phone"></i>Москва, Дербеневская Набережная, д. 7, стр./корпус 22, подъезд А, 2 этаж, Open Space 1240, место 127</p>
+                    <p><i class="fa fa-map-pin contact-phone"></i>Москва, Дербеневская Набережная, д. 7, стр./корпус 22,
+                        подъезд А, 2 этаж, Open Space 1240, место 127</p>
                 </div>
             </div>
         </div>
@@ -111,7 +117,8 @@ if ($u === false) {
             <nav class="navbar navbar-light navbar-expand-md my-2">
                 <div class="container-fluid">
                     <button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span
-                            class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span>
+                                class="visually-hidden">Toggle navigation</span><span
+                                class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navcol-card">
                         <ul class="navbar-nav text-center d-flex align-items-center">
@@ -141,7 +148,12 @@ if ($u === false) {
         <table class="table">
             <thead>
             <tr>
-                <th><div class="form-check"><input class="form-check-input input-checkbox disabled" disabled type="checkbox"><label class="form-check-label" style="padding-left: 1em;" for="formCheck-1">Наименование</label></div></th>
+                <th>
+                    <div class="form-check"><input class="form-check-input input-checkbox disabled" disabled
+                                                   type="checkbox"><label class="form-check-label"
+                                                                          style="padding-left: 1em;" for="formCheck-1">Наименование</label>
+                    </div>
+                </th>
                 <th>Дата исполнения</th>
                 <th>Поставщик</th>
                 <th>Cтатус</th>
@@ -149,13 +161,17 @@ if ($u === false) {
             </thead>
             <tbody>
             <tr>
-                <td><input type="checkbox" class='form-check-input input-checkbox' style="margin-right: 1em">Завести заявку на подготовку рабочего места</td>
+                <td><input type="checkbox" class='form-check-input input-checkbox' style="margin-right: 1em">Завести
+                    заявку на подготовку рабочего места
+                </td>
                 <td>5 декабря 8:00</td>
                 <td class='d-flex align-items-center' style='border:0'>
-                    <img src="assets/img/belou.png" class="belou" alt="">&nbsp; &nbsp; Белоусова Н.М.</td>
+                    <img src="assets/img/belou.png" class="belou" alt="">&nbsp; &nbsp; Белоусова Н.М.
+                </td>
                 <td>
                     <span class="badge bg-primary">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="dot bi bi-dot">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor"
+                             viewBox="0 0 16 16" class="dot bi bi-dot">
                             <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"></path>
 	                    </svg>
                         Новое
@@ -163,7 +179,8 @@ if ($u === false) {
                 </td>
             </tr>
             <tr>
-                <td><input type="checkbox" class='form-check-input input-checkbox' style="margin-right: 1em">Открыть доступ для Качаловой Т. А.
+                <td><input type="checkbox" class='form-check-input input-checkbox' style="margin-right: 1em">Открыть
+                    доступ для Качаловой Т. А.
                 </td>
                 <td class='text-big'>—</td>
                 <td class='d-flex align-items-center' style='border:0;'>
@@ -176,7 +193,8 @@ if ($u === false) {
 	                                </svg>Новое</span></td>
             </tr>
             <tr>
-                <td><input type="checkbox" class='form-check-input input-checkbox' style="margin-right: 1em">Открыть доступ к рабочему столу для Качаловой Т. А.
+                <td><input type="checkbox" class='form-check-input input-checkbox' style="margin-right: 1em">Открыть
+                    доступ к рабочему столу для Качаловой Т. А.
                 </td>
                 <td class='text-big'>—</td>
                 <td class='d-flex align-items-center' style='border:0'>
@@ -197,14 +215,20 @@ if ($u === false) {
     <div class="row">
         <div class="col" style="margin-left: 1em;">
             <p style="font-size: 2em;">Задачи</p>
-            <p>3 в работе&nbsp; &nbsp;<span style="color:#A0A0A0">0 помогаю&nbsp; &nbsp;0 поручаю&nbsp; &nbsp;0 наблюдаю</span></p>
+            <p>3 в работе&nbsp; &nbsp;<span
+                        style="color:#A0A0A0">0 помогаю&nbsp; &nbsp;0 поручаю&nbsp; &nbsp;0 наблюдаю</span></p>
         </div>
     </div>
     <div class="table-responsive">
         <table class="table">
             <thead>
             <tr>
-                <th><div class="form-check"><input class="form-check-input input-checkbox disabled" disabled type="checkbox"><label class="form-check-label" style="padding-left: 1em;" for="formCheck-1">Наименование</label></div></th>
+                <th>
+                    <div class="form-check"><input class="form-check-input input-checkbox disabled" disabled
+                                                   type="checkbox"><label class="form-check-label"
+                                                                          style="padding-left: 1em;" for="formCheck-1">Наименование</label>
+                    </div>
+                </th>
                 <th>Дата исполнения</th>
                 <th>Поставщик</th>
                 <th>Cтатус</th>
@@ -212,13 +236,16 @@ if ($u === false) {
             </thead>
             <tbody>
             <tr>
-                <td><input type="checkbox" class='form-check-input input-checkbox' style="margin-right: 1em"><span style="color: #FF5252;">Запись о приёме на работу Евгений Шамрай</span></td>
+                <td><input type="checkbox" class='form-check-input input-checkbox' style="margin-right: 1em"><span
+                            style="color: #FF5252;">Запись о приёме на работу Евгений Шамрай</span></td>
                 <td>5 декабря 8:00</td>
                 <td class='d-flex align-items-center' style='border:0'>
-                    <img src="assets/img/belou.png" class="belou" alt="">&nbsp; &nbsp; Белоусова Н.М.</td>
+                    <img src="assets/img/belou.png" class="belou" alt="">&nbsp; &nbsp; Белоусова Н.М.
+                </td>
                 <td>
                     <span class="badge bg-primary">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="dot bi bi-dot">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor"
+                             viewBox="0 0 16 16" class="dot bi bi-dot">
                             <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"></path>
 	                    </svg>
                         Новое
@@ -226,7 +253,8 @@ if ($u === false) {
                 </td>
             </tr>
             <tr>
-                <td><input type="checkbox" class='form-check-input input-checkbox' style="margin-right: 1em">Поставить дизайнеру задачу
+                <td><input type="checkbox" class='form-check-input input-checkbox' style="margin-right: 1em">Поставить
+                    дизайнеру задачу
                 </td>
                 <td class='text-big'>—</td>
                 <td class='d-flex align-items-center' style='border:0;'>
@@ -239,14 +267,16 @@ if ($u === false) {
 	                                    </svg>Завершено</span></td>
             </tr>
             <tr>
-                <td><input type="checkbox" class='form-check-input input-checkbox' style="margin-right: 1em">Дать комментарий в Jira<span style="color:#FCAA2E;"><svg
-                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor"
-                        viewBox="0 0 16 16" class="bi bi-lightning" style="margin-left: 10px;">
+                <td><input type="checkbox" class='form-check-input input-checkbox' style="margin-right: 1em">Дать
+                    комментарий в Jira<span style="color:#FCAA2E;"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor"
+                                viewBox="0 0 16 16" class="bi bi-lightning" style="margin-left: 10px;">
 	                                    <path d="M5.52.359A.5.5 0 0 1 6 0h4a.5.5 0 0 1 .474.658L8.694 6H12.5a.5.5 0 0 1 .395.807l-7 9a.5.5 0 0 1-.873-.454L6.823 9.5H3.5a.5.5 0 0 1-.48-.641l2.5-8.5zM6.374 1 4.168 8.5H7.5a.5.5 0 0 1 .478.647L6.78 13.04 11.478 7H8a.5.5 0 0 1-.474-.658L9.306 1H6.374z"></path>
 	                                </svg></span>
                     <button id="active-clock" disabled class="btn btn-outline-success shadow-none" type="button"
-                            style="margin-right: 7px;margin-left: 7px;"><i class="fa fa-play" style="margin-right: 10px;"></i><span
-                            style="color:white">0:07:21</span>
+                            style="margin-right: 7px;margin-left: 7px;"><i class="fa fa-play"
+                                                                           style="margin-right: 10px;"></i><span
+                                style="color:white">0:07:21</span>
                 </td>
                 <td class='text-big'>—</td>
                 <td class='d-flex align-items-center' style='border:0'>
@@ -267,14 +297,20 @@ if ($u === false) {
     <div class="row">
         <div class="col" style="margin-left: 1em;">
             <p style="font-size: 2em;">Услуги</p>
-            <p>3 заказа&nbsp; &nbsp;<span style="color:#A0A0A0">0 в работе&nbsp; &nbsp;0 делегировано&nbsp; &nbsp;0 наблюдаю</span></p>
+            <p>3 заказа&nbsp; &nbsp;<span style="color:#A0A0A0">0 в работе&nbsp; &nbsp;0 делегировано&nbsp; &nbsp;0 наблюдаю</span>
+            </p>
         </div>
     </div>
     <div class="table-responsive">
         <table class="table">
             <thead>
             <tr>
-                <th><div class="form-check"><input class="form-check-input input-checkbox disabled" disabled type="checkbox"><label class="form-check-label" style="padding-left: 1em;" for="formCheck-1">Наименование</label></div></th>
+                <th>
+                    <div class="form-check"><input class="form-check-input input-checkbox disabled" disabled
+                                                   type="checkbox"><label class="form-check-label"
+                                                                          style="padding-left: 1em;" for="formCheck-1">Наименование</label>
+                    </div>
+                </th>
                 <th>Дата исполнения</th>
                 <th>Поставщик</th>
                 <th>Cтатус</th>
@@ -282,10 +318,13 @@ if ($u === false) {
             </thead>
             <tbody>
             <tr>
-                <td><input type="checkbox" class='form-check-input input-checkbox' style="margin-right: 1em">Завести заявку на подготовку рабочего места</td>
+                <td><input type="checkbox" class='form-check-input input-checkbox' style="margin-right: 1em">Завести
+                    заявку на подготовку рабочего места
+                </td>
                 <td>5 декабря 8:00</td>
                 <td class='d-flex align-items-center' style='border:0'>
-                    <img src="assets/img/belou.png" class="belou" alt="">&nbsp; &nbsp; Белоусова Н.М.</td>
+                    <img src="assets/img/belou.png" class="belou" alt="">&nbsp; &nbsp; Белоусова Н.М.
+                </td>
                 <td>
                     <span class="badge bg-primary"><svg xmlns="http://www.w3.org/2000/svg"
                                                         width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16"
@@ -295,7 +334,8 @@ if ($u === false) {
                 </td>
             </tr>
             <tr>
-                <td><input type="checkbox" class='form-check-input input-checkbox' style="margin-right: 1em">Открыть доступ для Качаловой Т. А.
+                <td><input type="checkbox" class='form-check-input input-checkbox' style="margin-right: 1em">Открыть
+                    доступ для Качаловой Т. А.
                 </td>
                 <td class='text-big'>—</td>
                 <td class='d-flex align-items-center' style='border:0;'>
@@ -308,7 +348,8 @@ if ($u === false) {
 	                                        </svg>Завершено</span></td>
             </tr>
             <tr>
-                <td><input type="checkbox" class='form-check-input input-checkbox' style="margin-right: 1em">Открыть доступ к рабочему столу для Качаловой Т. А.
+                <td><input type="checkbox" class='form-check-input input-checkbox' style="margin-right: 1em">Открыть
+                    доступ к рабочему столу для Качаловой Т. А.
                 </td>
                 <td class='text-big'>—</td>
                 <td class='d-flex align-items-center' style='border:0'>
@@ -337,7 +378,8 @@ if ($u === false) {
                 <div class="col d-xl-flex align-items-xl-start"><input id='vacinput' type="date" class='input-date'
                                                                        style="margin-top: 5px;"></div>
                 <div class="col d-xl-flex flex-grow-1 justify-content-xl-center align-items-xl-start">
-                    <button id="vacbtn" class="btn input-button shadow" type="button" style="width: 80%;">Узнать</button>
+                    <button id="vacbtn" class="btn input-button shadow" type="button" style="width: 80%;">Узнать
+                    </button>
                 </div>
             </div>
             <div class='row d-flex justify-content-center align-items-end' style='height: 200px;'>
@@ -357,7 +399,7 @@ if ($u === false) {
             </div>
         </div>
         <div class="col-md-4 paper" style="margin-left: 0;margin-right: -20px; padding-right:0;">
-            <div class="row"  style="margin-top: 10px;">
+            <div class="row" style="margin-top: 10px;">
                 <div class="col">
                     <h4>Достижения</h4>
                 </div>
@@ -382,11 +424,11 @@ if ($u === false) {
     let int = setInterval(() => {
         let minutes = seconds / 60 | 0;
         let secondsleft = seconds - minutes * 60
-        if (secondsleft < 10) secondsleft = "0"+secondsleft;
-        let crts = "0:0"+minutes + ":" + secondsleft;
+        if (secondsleft < 10) secondsleft = "0" + secondsleft;
+        let crts = "0:0" + minutes + ":" + secondsleft;
         seconds -= 1;
         if (seconds < 0) clearInterval(int);
-        clock.innerHTML = '<i class="fa fa-play" style="margin-right: 10px;"></i> <span style="color:white">'+crts+'</span>';
+        clock.innerHTML = '<i class="fa fa-play" style="margin-right: 10px;"></i> <span style="color:white">' + crts + '</span>';
     }, 1000);
     $(document).ready(function () {
         $('input[type="checkbox"].input-checkbox').on('click', function () {
