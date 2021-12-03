@@ -1,4 +1,5 @@
 <?php
+session_start();
 require '../service/auth.php';
 if (Auth::checkLogin() !== false) {
     header("Location: ../");
@@ -24,11 +25,16 @@ if (isset($_POST['submit'])) {
             true => time()+60*60*24*30*2, // Two months
             false => 0 // For current session
         };
+        setcookie('loghash', Auth::createLoginHash($user->getEmail()), $len, "/");
         header("Location: ../");
         exit;
     }
     header("Location: ./");
     exit;
+}
+if (isset($_SESSION['modal'])) {
+    $modal = $_SESSION['modal'];
+    unset($_SESSION['modal']);
 }
 ?>
 <!DOCTYPE html>
