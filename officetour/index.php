@@ -1,3 +1,11 @@
+<?php
+require '../service/auth.php';
+$u = Auth::checkLogin();
+if ($u === false) {
+    header("Location: ../login?back=officetour");
+    exit;
+}
+?>
 <!DOCTYPE html>
 <html lang="ru">
 <head>
