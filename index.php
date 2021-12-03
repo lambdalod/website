@@ -169,9 +169,9 @@ if ($u === false) {
                 <td class='d-flex align-items-center' style='border:0;'>
                     <img src="assets/img/oresh.png" class="oresh">&nbsp; &nbsp; Орешникова Н.М.
                 </td>
-                <td><span class="badge bg-primary"><svg xmlns="http://www.w3.org/2000/svg" class='dot' width="1em"
+                <td><span class="badge bg-primary"><svg xmlns="http://www.w3.org/2000/svg" width="1em"
                                                         height="1em" fill="currentColor" viewBox="0 0 16 16"
-                                                        class="bi bi-dot">
+                                                        class="dot bi bi-dot">
 	                                    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"></path>
 	                                </svg>Новое</span></td>
             </tr>
@@ -182,9 +182,9 @@ if ($u === false) {
                 <td class='d-flex align-items-center' style='border:0'>
                     <img src="assets/img/vined.png" class="vined">&nbsp; &nbsp; Винедиктова А.М.
                 </td>
-                <td><span class="badge bg-primary"><svg xmlns="http://www.w3.org/2000/svg" class="dot" width="1em"
+                <td><span class="badge bg-primary"><svg xmlns="http://www.w3.org/2000/svg" width="1em"
                                                         height="1em" fill="currentColor" viewBox="0 0 16 16"
-                                                        class="bi bi-dot">
+                                                        class="dot bi bi-dot">
 	                                    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"></path>
 	                                </svg>Новое</span></td>
             </tr>
@@ -232,9 +232,9 @@ if ($u === false) {
                 <td class='d-flex align-items-center' style='border:0;'>
                     <img src="assets/img/oresh.png" class="oresh">&nbsp; &nbsp; Орешникова Н.М.
                 </td>
-                <td><span class="badge bg-primary"><svg xmlns="http://www.w3.org/2000/svg" class="dot-complete"
+                <td><span class="badge bg-primary"><svg xmlns="http://www.w3.org/2000/svg"
                                                         width="1em" height="1em" fill="currentColor"
-                                                        viewBox="0 0 16 16" class="bi bi-dot">
+                                                        viewBox="0 0 16 16" class="dot-complete bi bi-dot">
 	                                        <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"></path>
 	                                    </svg>Завершено</span></td>
             </tr>
@@ -252,9 +252,9 @@ if ($u === false) {
                 <td class='d-flex align-items-center' style='border:0'>
                     <img src="assets/img/vined.png" class="vined">&nbsp; &nbsp; Винедиктова А.М.
                 </td>
-                <td><span class="badge bg-primary"><svg xmlns="http://www.w3.org/2000/svg" class='dot-progress'
+                <td><span class="badge bg-primary"><svg xmlns="http://www.w3.org/2000/svg"
                                                         width="1em" height="1em" fill="currentColor"
-                                                        viewBox="0 0 16 16" class="bi bi-dot">
+                                                        viewBox="0 0 16 16" class="dot-progress bi bi-dot">
 	                                        <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"></path>
 	                                    </svg>В работе</span></td>
             </tr>
@@ -287,9 +287,9 @@ if ($u === false) {
                 <td class='d-flex align-items-center' style='border:0'>
                     <img src="assets/img/belou.png" class="belou" alt="">&nbsp; &nbsp; Белоусова Н.М.</td>
                 <td>
-                    <span class="badge bg-primary"><svg xmlns="http://www.w3.org/2000/svg" class='dot-progress'
+                    <span class="badge bg-primary"><svg xmlns="http://www.w3.org/2000/svg"
                                                         width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16"
-                                                        class="bi bi-dot">
+                                                        class="dot-progress bi bi-dot">
 	                                            <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"></path>
 	                                        </svg>На уточнении</span>
                 </td>
@@ -301,9 +301,9 @@ if ($u === false) {
                 <td class='d-flex align-items-center' style='border:0;'>
                     <img src="assets/img/oresh.png" class="oresh">&nbsp; &nbsp; Орешникова Н.М.
                 </td>
-                <td><span class="badge bg-primary"><svg xmlns="http://www.w3.org/2000/svg" class='dot-complete'
+                <td><span class="badge bg-primary"><svg xmlns="http://www.w3.org/2000/svg"
                                                         width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16"
-                                                        class="bi bi-dot">
+                                                        class="dot-complete bi bi-dot">
 	                                            <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"></path>
 	                                        </svg>Завершено</span></td>
             </tr>
@@ -314,9 +314,9 @@ if ($u === false) {
                 <td class='d-flex align-items-center' style='border:0'>
                     <img src="assets/img/vined.png" class="vined">&nbsp; &nbsp; Винедиктова А.М.
                 </td>
-                <td><span class="badge bg-primary"><svg xmlns="http://www.w3.org/2000/svg" class='dot-progress'
+                <td><span class="badge bg-primary"><svg xmlns="http://www.w3.org/2000/svg"
                                                         width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16"
-                                                        class="bi bi-dot">
+                                                        class="dot-progress bi bi-dot">
 	                                            <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"></path>
 	                                        </svg>На согласовании</span></td>
             </tr>
