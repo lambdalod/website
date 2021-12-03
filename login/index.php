@@ -1,8 +1,13 @@
 <?php
 session_start();
 require '../service/auth.php';
+$back = $_GET['back'] ?? "";
+$fback = match ($back) {
+    "" => "",
+    default => "?back={$back}",
+};
 if (Auth::checkLogin() !== false) {
-    header("Location: ../");
+    header("Location: ../{$back}");
     exit;
 }
 if (isset($_POST['submit'])) {
@@ -13,7 +18,7 @@ if (isset($_POST['submit'])) {
         $user = new User(phone: $phone);
     } catch (UserNotFound $e) {
         $_SESSION['modal'] = ["Ошибка!", "Пользователь не зарегистрирован или пароль не верен!"];
-        header("Location: ./");
+        header("Location: ./{$fback}");
         exit;
     }
     $hash = $user->getHash();
@@ -25,10 +30,10 @@ if (isset($_POST['submit'])) {
             true => 0 // For current session
         };
         setcookie('loghash', Auth::createLoginHash($user->getEmail()), $len, "/");
-        header("Location: ../");
+        header("Location: ../{$back}");
         exit;
     }
-    header("Location: ./");
+    header("Location: ./{$fback}");
     exit;
 }
 if (isset($_SESSION['modal'])) {
