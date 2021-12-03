@@ -5,7 +5,6 @@ if (Auth::checkLogin() !== false) {
     header("Location: ../");
     exit;
 }
-
 if (isset($_POST['submit'])) {
     $phone = $_POST['phone'];
     $paswd = $_POST['password'];
@@ -22,7 +21,7 @@ if (isset($_POST['submit'])) {
     else {
         // password is valid
         $len = match ($remember) {
-            true => time()+60*60*24*30*2, // Two months
+            true => time() + 60 * 60 * 24 * 30 * 2, // Two months
             false => 0 // For current session
         };
         setcookie('loghash', Auth::createLoginHash($user->getEmail()), $len, "/");
@@ -50,23 +49,26 @@ if (isset($_SESSION['modal'])) {
 </head>
 
 <body>
-    <div id="login" class="container d-flex align-items-center justify-content-center" style="width: 100vw;height: 100vh;">
+<form method="post">
+    <div id="login" class="container d-flex align-items-center justify-content-center"
+         style="width: 100vw;height: 100vh;">
         <div class="col-xl-5 paper d-grid gap-3">
-            <form method="post">
-                <div>
-                    <p class="text-center subheader">Добро пожаловать!</p>
+            <div>
+                <p class="text-center subheader">Добро пожаловать!</p>
+            </div>
+            <div class="text-center"><input class='line-input' type="text" placeholder="Номер телефона" name="phone"></div>
+            <div class="text-center"><input class='line-input' type="password" placeholder="Пароль" name="password"></div>
+            <div class="d-flex justify-content-center" style="width: 250px;">
+                <div class="form-check"><input class="form-check-input input-checkbox shadow-none text-center" type="checkbox" id="formCheck-1" name="remember">
+                    <label class="form-check-label" for="formCheck-1">Чужой компьютер</label>
                 </div>
-                <div class="text-center"><input class='line-input' type="text" placeholder="Номер телефона" name="phone"></div>
-                <div class="text-center"><input class='line-input' type="password" placeholder="Пароль" name="password"></div>
-                <div class="d-flex justify-content-center" style="width: 250px;">
-                    <div class="form-check"><input class="form-check-input input-checkbox shadow-none text-center" type="checkbox" id="formCheck-1" name="remember"><label class="form-check-label" for="formCheck-1">Чужой компьютер</label></div>
-                </div>
-                <div class="text-center"><button class="btn input-button shadow-none" type="submit" name="submit">Войти</button></div>
-                <div class="text-center"><a class='input-link' href="#">Не помню пароль</a></div>
-            </form>
+            </div>
+            <div class="text-center"><button class="btn input-button shadow-none" type="submit" name="submit">Войти</button></div>
+            <div class="text-center"><a class='input-link' href="#">Не помню пароль</a></div>
         </div>
     </div>
-    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+</form>
+<script src="../assets/bootstrap/js/bootstrap.min.js"></script>
 </body>
 
 </html>
