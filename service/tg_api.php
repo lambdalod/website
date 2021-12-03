@@ -118,8 +118,8 @@ class API {
         }
     }
     public static function sendPhoto(int|string $chat, string $url, int $type = 0): void {
-        if (empty($msg) || empty($url)) {
-            throw new InvalidArgumentException("You are trying to send blank message/url!");
+        if (empty($url)) {
+            throw new InvalidArgumentException("You are trying to send blank url!");
         }
         try {
             self::methodExecutor("sendPhoto", array('chat_id' => $chat, "photo" => $url), $type);
