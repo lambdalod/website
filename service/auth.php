@@ -1,6 +1,7 @@
 <?php
 require_once 'config.php';
 require_once 'logger.php';
+require_once 'tg_api.php';
 class UserNotFound extends Exception {}
 class HashExpired extends Exception {}
 class Auth {
