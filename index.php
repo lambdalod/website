@@ -12,7 +12,8 @@ if ($u === false) {
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>mainPage</title>
+    <title>Портал онбординга * Личный кабинет</title>
+    <link rel="icon" href="assets/favicon.png">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/4ba8d6f6b6.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/styles.css">
