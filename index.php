@@ -392,7 +392,7 @@ if ($u === false) {
                     <h4>Обучение</h4>
                 </div>
             </div>
-            <p style="margin-bottom: 0;"><a href="#" class='custom-link'>Личный кабинет</a></p>
+            <p style="margin-bottom: 0;"><a href="learning" class='custom-link'>Личный кабинет</a></p>
             <p style="margin-left: 0.5em">на портале "Про Движение"</p>
             <div class='row d-flex align-items-end flex-column' style="height:250px">
                 <img src="assets/img/globe.png" class="globe mt-auto">
