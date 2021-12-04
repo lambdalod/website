@@ -1,0 +1,101 @@
+img.cover {
+  object-fit: cover;
+}
+
+body {
+  background: url("../img/mainpage1.jpg") no-repeat;
+  background-size: cover;
+}
+h3{
+  margin-left: 1em;
+}
+.image-button{
+  color:white;
+}
+.image-button:hover{
+  color:white;
+}
+.nav-current{
+  color: #E3E5E8 !important;
+  font-size: 1.1em;
+  text-align: center;
+  text-decoration: none !important;
+}
+.nav-current:hover{
+  color: #E3E5E8;
+  text-decoration: underline;
+}
+.nav-current:active{
+  color: #E3E5E8;
+  text-decoration: underline;
+}
+.nav-other{
+  color: #A0A0A0 !important;
+  font-size: 1.1em;
+  text-decoration: none;
+  text-align: center;
+}
+.nav-other:focus{
+  color: #A0A0A0;
+}
+.nav-other:hover{
+  color:#A0A0A0;
+}
+.line{
+  height:6px;
+  border-radius:3px;
+  background-image: linear-gradient(-90deg, #5CA3F2, #B642CE);
+}
+.empty-line{
+  height:6px;
+  background:none;
+}
+.nav-item{
+  margin-right: 1em;
+}
+div.paper {
+  color: #ffffff;
+  max-width: 1100px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #777777;
+  background: linear-gradient(134.96deg, rgba(255, 255, 255, 0.2) 1.26%, rgba(255, 255, 255, 0.1) 99.2%);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(100px);
+  border-radius: 10px;
+  margin-top:2em;
+  margin-bottom:2em;
+}
+div.paper-light{
+  padding: 0 2em 0 2em;
+  width:300em;
+  color: #ffffff;
+  max-width: 1100px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #777777;
+  background: linear-gradient(134.96deg, rgba(255, 255, 255, 0.2) 1.26%, rgba(255, 255, 255, 0.1) 99.2%);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(100px);
+  border-radius: 10px;
+}
+.btn.button-grey{
+  outline:0;
+  border-radius: 3px;
+  border: 1px solid #A0A0A0;
+  background-image: linear-gradient(0deg, #ffffff22, #ffffff44);
+  color:white;
+  max-width: 300px;
+  width: 100%;
+}
+.btn.button-grey:hover{
+  filter: brightness(80%);
+}
+.btn.button-grey:focus{
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(239, 104, 164, 0.6);
+}
+.custom-link{
+  color:white;
+  font-size:3em;
+  background:none;
+}

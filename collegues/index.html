@@ -3,8 +3,9 @@
 
 <head>
     <style>
-        #startplace {
-            cursor: pointer;
+        .btn-link {
+            color: white !important;
+            text-decoration: none !important;
         }
         .blur {
             overflow-x: hidden;
@@ -16,27 +17,28 @@
         }
     </style>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>maap</title>
-    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css?h=1f5647dc65bf3adb596e93a82c7ae8af">
-    <script src="https://kit.fontawesome.com/4ba8d6f6b6.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/styles.css?h=8b9825c30a51ef8cbbc1c11ccec72161">
+    <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport">
+    <title>CollaborationProject</title>
+    <link href="../assets/bootstrap/css/bootstrap.min.css?h=1f5647dc65bf3adb596e93a82c7ae8af" rel="stylesheet">
+    <link href="../assets/fonts/font-awesome.min.css?h=220695d33937f0c1d9977599320bf21d" rel="stylesheet">
+    <link href="css/styles.css?h=a35cc79014af5df1c3d3c13e7031bfb9" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
 </head>
 
 <body>
-<div id="con">
+<div id="co">
 <nav class="navbar navbar-light navbar-expand-md" style="padding-left: 5%;padding-right: 5%;">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">
-            <svg width="178" height="44" viewBox="0 0 178 44" fill="none" xmlns="http://www.w3.org/2000/svg"
+            <svg fill="none" height="44" viewBox="0 0 178 44" width="178" xmlns="http://www.w3.org/2000/svg"
                  xmlns:xlink="http://www.w3.org/1999/xlink">
-                <rect width="178" height="44" fill="url(#pattern0)"/>
+                <rect fill="url(#pattern0)" height="44" width="178"/>
                 <defs>
-                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-                        <use xlink:href="#image0_28_1000"
-                             transform="translate(-0.00388937) scale(0.00475367 0.0192308)"/>
+                    <pattern height="1" id="pattern0" patternContentUnits="objectBoundingBox" width="1">
+                        <use transform="translate(-0.00388937) scale(0.00475367 0.0192308)"
+                             xlink:href="#image0_28_1000"/>
                     </pattern>
-                    <image id="image0_28_1000" width="212" height="52"
+                    <image height="52" id="image0_28_1000" width="212"
                            xlink:href="data:image/png;base64,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
@@ -44,7 +46,7 @@
                 </defs>
             </svg>
         </a>
-        <button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol"><span class="visually-hidden">Toggle navigation</span><span
+        <button class="navbar-toggler" data-bs-target="#navcol" data-bs-toggle="collapse"><span class="visually-hidden">Toggle navigation</span><span
                 class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse gap-4" id="navcol" style="padding-left: 5%;">
             <ul class="navbar-nav">
@@ -86,129 +88,114 @@
         </div>
     </div>
 </nav>
-    <!-- Start: 1 Row 2 Columns -->
-    <div class="container">
-        <h3 style="color:white; margin: 2em 0 0 0.75em" >Адаптация</h3>
-        <div class="d-flex" style="">
-            <div class="paper mx-2">
-                <p style="color: #A0A0A0;text-align:center;">Как пройти испытательный срок?</p>
-                <div class="d-flex justify-content-around mt-4">
-                    <div id="startplace" class="filled-area d-flex justify-content-center align-items-center">
-                        <img src="img/img_level_one.png" class="image" style="border: 1px solid #A0A0A0;background-color:#2B2C84;">
-                    </div>
-                    <div class="empty-area d-flex justify-content-center align-items-center">
-                        <div>
-
-                        </div>
-
-                    </div>
-                </div>
-                <div class="spacer"></div>
-                <div class="d-flex justify-content-around">
-                    <div class="empty-area"></div>
-                    <div class="filled-area d-flex justify-content-center align-items-center">
-                        <img src="img/img_3.png" class="image">
-                    </div>
-                </div>
-                <div class="spacer2"></div>
-                <div class="d-flex justify-content-around">
-                    <div class="filled-area d-flex justify-content-center align-items-center">
-                        <img src="img/img_3.png" class="image">
-                    </div>
-                    <div class="empty-area"></div>
-                </div>
-                <div class="spacer"></div>
-                <div class="d-flex justify-content-around">
-                    <div class="empty-area"></div>
-                    <div class="filled-area d-flex justify-content-center align-items-center">
-                        <img src="img/img_3.png" class="image">
-                    </div>
+<div style="padding: 2em 5em 2em 5em;">
+    <h3 class="my-5 text-white">Коллеги</h3>
+    <div class="row" style="margin-right: 1em;margin-left: 1em;">
+        <div class="col"
+             style="height: 278px;width: 278px;background: url('img/Dizayn_bez_nazvania_9 1.png') no-repeat;background-size: cover;padding-right: 0px;padding-left: 0px;margin-right: 0.5em;">
+            <div class="d-xl-flex justify-content-xl-center align-items-xl-end"
+                 style="height: 100%;padding: 0.5em;border-radius: 1em;">
+                <div style="z-index: 20;height: 80px;width: 260px;background: linear-gradient(-97deg, #1A16509E 62%, #030923 100%);border-width: 8px;border-radius: 10px;margin: 1em;padding: 1em;box-shadow: 0px 8px 20px;margin-bottom: 0.4em;">
+                    <h5 class="text-nowrap" style="color: #FFFFFF;font-size: 13px;">Буев Иван Николаевич</h5>
+                    <p style="color: #A0A0A0;position: relative;bottom: 0;font-size: 12px;">Team-Lead</p>
                 </div>
             </div>
-            <div class="paper mx-2 py-4 px-3">
-                <div style="height: 70%;">
-                    <div>
-                        <div class="paper dark-paper d-flex flex-row align-content-start p-2">
-                            <div>
-                                <input class="form-check-input input-checkbox" type="checkbox" checked disabled style="margin-right: 12px;">
-                            </div>
-                            <div>
-                                <span class="list-span">Оформиться на работу</span>
-                            </div>
-
-                        </div>
-                        <div class="paper dark-paper d-flex flex-row align-content-start p-2">
-                            <div>
-                                <input class="form-check-input input-checkbox" type="checkbox" checked disabled style="margin-right: 12px;">
-                            </div>
-                            <div>
-                                <span class="list-span">Получить постоянный пропуск</span>
-                            </div>
-
-                        </div>
-                        <div class="paper dark-paper d-flex flex-row align-content-start align-items-start p-2">
-                            <div>
-                                <input class="form-check-input input-checkbox" checked type="checkbox" style="margin-right: 12px;">
-                            </div>
-                            <div>
-                                <div class="row"><p style="color: #A0A0A0; font-size: 0.8em; margin: 0">10:00 - 12:00 Переговорка перерыв</p></div>
-                                <div class="row"><p style="font-size: 1.2em">Встреча с руководителями</p></div>
-                                <div class="row align-items-center my-0" style="color: #A0A0A0">
-                                    <img src="img/belou.png" class="belou mx-2"> Даной Никифировой
-                                </div>
-                            </div>
-                        </div>
-                        <div class="paper dark-paper d-flex flex-row align-content-start p-2">
-                            <div>
-                                <input class="form-check-input input-checkbox" type="checkbox" style="margin-right: 12px;">
-                            </div>
-                            <div>
-                                <span class="list-span">Получить набор новичка</span>
-                            </div>
-                        </div>
-                        <div class="paper dark-paper d-flex flex-row align-content-start p-2">
-                            <div>
-                                <input class="form-check-input input-checkbox" type="checkbox" style="margin-right: 12px;">
-                            </div>
-                            <div>
-                                <span class="list-span">Дополнить свой профиль на портале: контакты, фото и пару слов о себе</span>
-                            </div>
-
-                        </div>
-                        <div class="paper dark-paper d-flex flex-row align-content-start p-2">
-                            <div>
-                                <input class="form-check-input input-checkbox" type="checkbox" style="margin-right: 12px;">
-                            </div>
-                            <div>
-                                <span class="list-span">Пообедать с коллегами</span>
-                            </div>
-
-                        </div>
-                        <div class="paper dark-paper d-flex flex-row align-content-start p-2">
-                            <div>
-                                <input class="form-check-input input-checkbox" type="checkbox" style="margin-right: 12px;">
-                            </div>
-                            <div>
-                                <span class="list-span">Ознакомиться с разделом базы знаний "Полезная информация"</span>
-                            </div>
-
-                        </div>
-                    </div>
+            <img class="rounded-circle border cover"
+                 height="76px"
+                 loading="lazy" src="img/photo_2021-12-04_01-28-08.jpg?h=2ba8036eca581cd44476fcaf8af9759b"
+                 style="z-index: 30;object-fit: cover;position: relative;width: 76px;height: 76px;margin: 0px;top: -55%;right: -64%;" width="76px">
+            <div class="d-xl-flex justify-content-xl-center"
+                 style="bottom: 120%;/*padding-left: 1em;*/position: relative;/*padding-right: 1em;*/height: 60%;"><img
+                    src="img/Bueffv.png?h=a02e0d16cbd6c8a1ced0b9f202970728" style="z-index: 10;"></div>
+        </div>
+        <div class="col"
+             style="height: 278px;width: 278px;background: url('img/Dizayn_bez_nazvania_9 2.png') no-repeat;background-size: cover;padding-right: 0px;padding-left: 0px;margin-right: 0.5em;">
+            <div class="d-xl-flex justify-content-xl-center align-items-xl-end"
+                 style="height: 100%;padding: 0.5em;border-radius: 1em;">
+                <div style="z-index: 20;height: 80px;width: 260px;background: linear-gradient(-97deg, #1A16509E 62%, #030923 100%);border-width: 8px;border-radius: 10px;margin: 1em;padding: 1em;box-shadow: 0px 8px 20px;margin-bottom: 0.4em;">
+                    <h5 class="text-nowrap" style="color: #FFFFFF;font-size: 13px;">Голубев Егор Сергеевич</h5>
+                    <p style="color: #A0A0A0;position: relative;bottom: 0;font-size: 12px;">Full-Stack Developer</p>
                 </div>
-                <div class="d-flex justify-content-center align-items-center mt-4 mb-2">
-                    <button class="btn button-grey">Пройти опрос</button>
-                </div>
-                <div class="d-flex flex-row">
-                    <div style="background-color: white; border-radius: 10px 10px 0 10px; margin:1em">
-                        <p style="color:black; padding:0.75em;">В ближайшие два месяца тебе на почту придёт приглашение на Welcome-тренинг</p>
-                    </div>
-                    <div class="d-flex align-items-end flex-column" >
-                        <img src="img/img_5.png" class="image mt-auto" style="background-color: transparent; position: relative; bottom: -1em">
-                    </div>
-                </div>
+            </div>
+            <img class="rounded-circle border cover"
+                 height="76px"
+                 loading="lazy" src="img/photo_2021-12-04_01-27-57.jpg?h=12cd4d6a50f404811fa489acb282f5a5"
+                 style="z-index: 30;object-fit: cover;position: relative;width: 76px;height: 76px;margin: 0px;top: -55%;right: -64%;" width="76px">
+            <div class="d-xl-flex justify-content-xl-center"
+                 style="bottom: 120%;/*padding-left: 1em;*/position: relative;/*padding-right: 1em;*/height: 60%;"><img
+                    src="img/output-onlinepngtools.png?h=03f9dbe76bf38f8b2c3215588cb5008f" style="z-index: 10;">
             </div>
         </div>
-    </div><!-- End: 1 Row 2 Columns -->
+        <div class="col"
+             style="height: 278px;width: 278px;background: url('img/Dizayn_bez_nazvania_9 3.png') no-repeat;background-size: cover;padding-right: 0px;padding-left: 0px;margin-right: 0.5em;">
+            <div class="d-xl-flex justify-content-xl-center align-items-xl-end"
+                 style="height: 100%;padding: 0.5em;border-radius: 1em;">
+                <div style="z-index: 20;height: 80px;width: 260px;background: linear-gradient(-97deg, #1A16509E 62%, #030923 100%);border-width: 8px;border-radius: 10px;margin: 1em;padding: 1em;box-shadow: 0px 8px 20px;margin-bottom: 0.4em;">
+                    <h5 class="text-nowrap" style="color: #FFFFFF;font-size: 13px;">Лахтионов Денис Геннадьевич</h5>
+                    <p style="color: #A0A0A0;position: relative;bottom: 0;font-size: 12px;">Ux/Ui Designer</p>
+                </div>
+            </div>
+            <img class="rounded-circle border cover"
+                 height="76px"
+                 loading="lazy" src="img/photo_2021-12-04_01-28-04.jpg?h=c479175b5e2222bf943119b0864dcd36"
+                 style="z-index: 30;object-fit: cover;position: relative;width: 76px;height: 76px;margin: 0px;top: -55%;right: -64%;" width="76px">
+            <div class="d-xl-flex justify-content-xl-center"
+                 style="bottom: 120%;/*padding-left: 1em;*/position: relative;/*padding-right: 1em;*/height: 60%;"><img
+                    src="img/Lakhtionov.png?h=bb3d9b5f11d2b832ebe22bd23a3077d8" style="z-index: 10;"></div>
+        </div>
+        <div class="col"
+             style="height: 278px;width: 278px;background: url('img/Dizayn_bez_nazvania_9 4.png') no-repeat;background-size: cover;padding-right: 0px;padding-left: 0px;margin-right: 0.5em;">
+            <div class="d-xl-flex justify-content-xl-center align-items-xl-end"
+                 style="height: 100%;padding: 0.5em;border-radius: 1em;">
+                <div style="z-index: 20;height: 80px;width: 260px;background: linear-gradient(-97deg, #1A16509E 62%, #030923 100%);border-width: 8px;border-radius: 10px;margin: 1em;padding: 1em;box-shadow: 0px 8px 20px;margin-bottom: 0.4em;">
+                    <h5 class="text-nowrap" style="color: #FFFFFF;font-size: 13px;">Лебедева Татьяна Сергеевна</h5>
+                    <p style="color: #A0A0A0;position: relative;bottom: 0;font-size: 12px;">Frontend developer</p>
+                </div>
+            </div>
+            <img class="rounded-circle border cover"
+                 height="76px"
+                 loading="lazy" src="img/photo_2021-12-04_01-28-01.jpg?h=82930c61354643ee9091fca07794a0b2"
+                 style="z-index: 30;object-fit: cover;position: relative;width: 76px;height: 76px;margin: 0px;top: -55%;right: -64%;" width="76px">
+            <div class="d-xl-flex justify-content-xl-center"
+                 style="bottom: 120%;/*padding-left: 1em;*/position: relative;/*padding-right: 1em;*/height: 60%;"><img
+                    src="img/Lebedeva.png?h=45f5333a2b0a6723cf3ec692cc97976c" style="z-index: 10;"></div>
+        </div>
+    </div>
+</div>
+
+<h3 class="my-5 text-white" style="padding-left: 100px;">Совместный проект</h3>
+<div class="d-flex justify-content-center">
+    <div class="text-center paper-light">
+        <h1 style="color: #FFFFFF;margin-left: 0px;padding: 0px;padding-top: 43px;padding-bottom: 22px;">UX/UI
+            переработка
+            дизайна сайта</h1><img class="rounded-circle border cover"
+                                   height="76px"
+                                   loading="lazy"
+                                   src="img/photo_2021-12-04_00-06-27.jpg?h=c547c61a2067346008d8fc28459d3bc3" style="transform: rotate(18deg);width: 76px;height: 76px;border-width: 33px;border-color: #FFFFFF;margin: 0px;margin-right: -65px;margin-left: -65px;" width="76px"><img class="rounded-circle border cover"
+                                                                                                                                                                                                                                                                                       height="76px"
+                                                                                                                                                                                                                                                                                       loading="lazy"
+                                                                                                                                                                                                                                                                                       src="img/photo_2021-12-04_00-06-30.jpg?h=c7e477336061df64039c841545098659" style="transform: rotate(18deg);width: 76px;height: 76px;border-width: 33px;border-color: #FFFFFF;margin: 0px;margin-right: -65px;margin-left: -65px;"
+                                                                                                                                                                                                                                                                                       width="76px"><img
+            class="rounded-circle border cover"
+            height="76px"
+            loading="lazy" src="img/photo_2021-12-04_00-06-29.jpg?h=8079c14373878966e1ec086a4efe9b12"
+            style="transform: rotate(18deg);width: 76px;height: 76px;border-width: 33px;border-color: #FFFFFF;margin: 0px;margin-right: -65px;margin-left: -65px;"
+            width="76px"><img class="rounded-circle border cover"
+                              height="76px"
+                              loading="lazy"
+                              src="img/photo_2021-12-04_00-06-29%20(2).jpg?h=3c5bca3c09112929b7384e1e6897c585" style="transform: rotate(18deg);width: 76px;height: 76px;border-width: 33px;border-color: #FFFFFF;margin: 0px;margin-right: -65px;margin-left: -65px;" width="76px"><img class="rounded-circle border cover"
+                                                                                                                                                                                                                                                                                        height="76px"
+                                                                                                                                                                                                                                                                                        loading="lazy"
+                                                                                                                                                                                                                                                                                        src="img/photo_2021-12-04_00-06-28.jpg?h=e42b8930541984a6d9bc50dbf62d3bed" style="transform: rotate(18deg);width: 76px;height: 76px;border-width: 33px;border-color: #FFFFFF;margin: 0px;margin-right: -65px;margin-left: -65px;" width="76px">
+        <hr style="color: #FFFFFF;border-width: 15px;">
+        <button class="btn btn-link" type="button">Развернуть<i
+                class="fa fa-arrow-down"></i></button>
+
+    </div>
+</div>
+<div class="d-flex justify-content-center m-4">
+    <button class="btn button-grey" id="continue">Продолжить экскурсию</button>
+</div>
 </div>
 <div id="po" class="hidden" style="position:fixed;top:0;left:0;z-index: 100;width: 100%;height: 100%;background: #000000cc">
     <!-- Start: 1 Row 1 Column -->
@@ -216,7 +203,7 @@
         <div>
             <div class="row">
                 <div class="col-md-12" style="color: black;padding-top: 100px;padding-left: 100px;">
-                    <p style="background: #ffffff;padding-top: 20px;padding-right: 15px;padding-left: 20px;width: 660px;height: 314px;font-size: 36px;border-radius: 10px; color:black">Ты слышал сколько программистов нужно, чтобы вкрутить лампочку?<br>Давай я тебе покажу!<button id="story-progress" class="btn btn-primary d-sm-flex" type="button" style="position: absolute;top: 328px;width: 510px;color: white;background: #F05919;border-radius: 4px;border-style: none;box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);font-family: gilroy;font-weight: bold;font-size: 26px;text-align: justify;height: 51px;margin-left: 50px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Поехали!</button></p>
+                    <p style="background: #ffffff;padding-top: 20px;padding-right: 15px;padding-left: 20px;width: 660px;height: 314px;font-size: 36px;border-radius: 10px; color:black">Давай посмотрим на твои инструменты для работы!<button id="story-progress" class="btn btn-primary d-sm-flex" type="button" style="position: absolute;top: 328px;width: 510px;color: white;background: #F05919;border-radius: 4px;border-style: none;box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);font-family: gilroy;font-weight: bold;font-size: 26px;text-align: justify;height: 51px;margin-left: 50px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Поехали!</button></p>
                 </div>
             </div>
         </div>
@@ -224,20 +211,20 @@
     <!-- Start: 1 Row 1 Column -->
     <div class="container">
         <div class="row">
-            <div class="col-md-12"><img src="img/pers.png"></div>
+            <div class="col-md-12"><img src="../learning/img/pers.png"></div>
         </div>
     </div>
 </div>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="../assets/bootstrap/js/bootstrap.min.js?h=5488c86a1260428f0c13c0f8fb06bf6a"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="../assets/bootstrap/js/bootstrap.min.js?h=5488c86a1260428f0c13c0f8fb06bf6a"></script>
 <script>
     $(document).ready(function () {
-        $('#startplace').on('click', function () {
-            $('#con').addClass("blur");
+        $('#continue').on('click', function () {
+            $('#co').addClass("blur");
             $('#po').removeClass('hidden');
         });
         $('#story-progress').on('click', function () {
-            window.location.href = '../collegues';
+            window.location.href = '../knowledge';
         });
     });
 </script>
